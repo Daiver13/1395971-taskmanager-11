@@ -3,6 +3,10 @@ export const RenderPosition = {
   BEFOREEND: `beforeend`
 };
 
+export const escKey = (evt) => {
+  return evt.key === `Escape` || evt.key === `Esc`;
+};
+
 const castTimeFormat = (value) => {
   return value < 10 ? `0${value}` : String(value);
 };
